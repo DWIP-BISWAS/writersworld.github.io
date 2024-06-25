@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Writer's World</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js"></script>
+
   </head>
   <body>
     <nav class="nav">
@@ -21,7 +23,12 @@
     </nav>
     </div>
     <section class="container content">
-<a  href="writersworld.vercel.app/main/. 365 Bedtime Stories Author Mary Graham Bonner-compressed.pdf" target="_blank">PDF.</a>
+<div id="pdf-container"></div>
+
+<script>
+  PDFObject.embed("https://drive.google.com/file/d/16XtCSudk4vuxr3txnXBffnUK7pNPzseL/view?usp=drive_open", "#pdf-container", { });
+</script>
+
  <script src="sb.js"></script>
   </body>
 </html>
