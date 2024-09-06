@@ -115,3 +115,9 @@ body {
   line-height: 30px;
   letter-spacing: 1.2px;
 }
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
