@@ -10,6 +10,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #222;
   padding-bottom: 50px;
+  background-color: #f7f7f7;
 }
 
 .container {
@@ -114,4 +115,44 @@ body {
   color: #555;
   line-height: 30px;
   letter-spacing: 1.2px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#search-results {
+  margin-top: 20px;
+}
+
+#search-results div {
+  background-color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+#search-results h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#search-results a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+#search-results a:hover {
+  color: #23527c;
 }
