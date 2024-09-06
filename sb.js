@@ -1,12 +1,10 @@
-const nav = document.querySelector(".nav");
 
+const nav = document.querySelector(".nav");
 const fixNav = () => {
   if (window.scrollY > nav.offsetHeight + 150) nav.classList.add("active");
   else nav.classList.remove("active");
 };
-
 window.addEventListener("scroll", fixNav);
-
 
 const ebooks = [
   { title: "12 Months to $1 Million", href: "s5.html" },
@@ -70,11 +68,9 @@ document.getElementById("search-input").addEventListener("input", (e) => {
   renderEbookList(searchedEbooks);
 });
 
-
 // New script for comment system
 const commentForm = document.querySelector('.comment-form');
 const commentList = document.querySelector('.comment-list');
-
 commentForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const commentText = document.querySelector('#comment-text').value;
@@ -82,4 +78,3 @@ commentForm.addEventListener('submit', (e) => {
   commentList.insertAdjacentHTML('beforeend', commentHTML);
   document.querySelector('#comment-text').value = '';
 });
-
