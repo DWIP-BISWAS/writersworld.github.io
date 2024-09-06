@@ -72,7 +72,7 @@ document.getElementById("search-input").addEventListener("input", (e) => {
 const commentForm = document.querySelector('.comment-form');
 const commentList = document.querySelector('.comment-list');
 commentForm.addEventListener('submit', (e) => {
-  console.log('Comment Added!');
+  alert('Comment Added!');
   e.preventDefault();
   const commentText = document.querySelector('#comment-text').value;
   const commentHTML = `<p>${commentText}</p>`;
