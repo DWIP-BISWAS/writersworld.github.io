@@ -71,3 +71,15 @@ document.getElementById("search-input").addEventListener("input", (e) => {
 });
 
 
+// New script for comment system
+const commentForm = document.querySelector('.comment-form');
+const commentList = document.querySelector('.comment-list');
+
+commentForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const commentText = document.querySelector('#comment-text').value;
+  const commentHTML = `<p>${commentText}</p>`;
+  commentList.insertAdjacentHTML('beforeend', commentHTML);
+  document.querySelector('#comment-text').value = '';
+});
+
