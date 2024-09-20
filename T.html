@@ -67,6 +67,26 @@
             }
         }
     }</script></div>
+      <!-- The code below includes your Project ID (P2mL9wBwyVug1rk3W2VrgFBWLwpV) -->
+<descope-wc
+	project-id="P2mL9wBwyVug1rk3W2VrgFBWLwpV"
+	flow-id="sign-up-or-in"
+	theme="light"
+/>
+
+<script>
+	const wcElement = document.getElementsByTagName('descope-wc')[0];
+
+	const onSuccess = (e) => {
+			console.log(e.detail.user.name)
+			console.log(e.detail.user.email)
+	};
+	const onError = (err) => console.log(err);
+
+	wcElement.addEventListener('success', onSuccess);
+	wcElement.addEventListener('error', onError);
+</script>
+  
       
  <script src="sb.js"></script>
   </body>
