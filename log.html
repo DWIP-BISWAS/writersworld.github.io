@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #google-signin-button {
+      margin: 100px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="google-signin-button"></div>
+  <script>
+    google.accounts.id.initialize({
+      client_id: 'YOUR_CLIENT_ID',
+      callback: handleCredentialResponse
+    });
+    google.accounts.id.renderButton(
+      document.getElementById('google-signin-button'),
+      { theme: 'outline', size: 'large' }
+    );
+    
+    function handleCredentialResponse(response) {
+      const token = response.credential;
+      // Send token to server for verification
+    }
+  </script>
+</body>
+</html>
