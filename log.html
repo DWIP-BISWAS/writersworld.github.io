@@ -3,8 +3,7 @@
 <html>
 <head>
   <title>Login Page</title>
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <meta name="google-signin-client_id" content="372019301016-t7p4bhupj716ggpp1ducd106fka35kk9.apps.googleusercontent.com">
+  <script src="https://accounts.google.com/gsi/client" async defer type="text/javascript"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,20 +16,27 @@
 </head>
 <body>
   <div id="google-signin-button"></div>
-  <script>
+  <script type="text/javascript">
     google.accounts.id.initialize({
       client_id: '372019301016-t7p4bhupj716ggpp1ducd106fka35kk9.apps.googleusercontent.com',
-      callback: handleCredentialResponse
+      callback: handleCredentialResponse,
+      auto_select: true,
+      prompt: 'select_account'
     });
     google.accounts.id.renderButton(
       document.getElementById('google-signin-button'),
-      { theme: 'outline', size: 'large' }
+      {
+        theme: 'outline',
+        size: 'large',
+        text: 'Sign in with Google'
+      }
     );
     
     function handleCredentialResponse(response) {
-      const token = response.credential;
-      // Send token to server for verification
+      // No need to handle credentials here
     }
   </script>
 </body>
 </html>
+
+
