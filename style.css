@@ -265,14 +265,6 @@ a:hover {
 }
 
 .audiobook-list a:hover {
-  color: #ccc;
+  color: #fff;
 }
 
-.audiobook-list a {
-  text-decoration: none;
-  color: #fff; 
-}
-
-.audiobook-list a:hover {
-  color: #ccc; 
-}
