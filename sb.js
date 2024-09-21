@@ -1,17 +1,16 @@
 
-if (localStorage.getItem('loggedIn') === null || localStorage.getItem('loggedIn') !== 'true') {
-  if (!localStorage.getItem('redirected')) {
-    localStorage.setItem('redirected', 'true');
+if (localStorage.getItem('loggedIn') !== 'true') {
+  if (!localStorage.getItem('alreadyRedirected')) {
+    localStorage.setItem('alreadyRedirected', 'true');
     window.location = 'log.html';
-  }
+  } 
 }
 
 document.querySelector('#logout-btn').addEventListener('click', () => {
   localStorage.removeItem('loggedIn');
-  localStorage.removeItem('redirected');
+  localStorage.removeItem('alreadyRedirected');
   window.location = 'log.html';
 });
-
 
 const nav = document.querySelector(".nav");
 const fixNav = () => {
