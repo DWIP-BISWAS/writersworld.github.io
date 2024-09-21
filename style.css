@@ -168,12 +168,13 @@ a:hover {
 
 /* Navigation Styles */
 
+
 .nav {
   position: fixed;
-  top: 0;
+  top: 80px;
   left: 0;
   width: 200px;
-  height: 100vh;
+  height: calc(100vh - 80px);
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -184,24 +185,22 @@ a:hover {
   text-align: center;
 }
 
-.nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav li {
-  margin-bottom: 20px;
-}
-
-.nav a {
-  text-decoration: none;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  z-index: 1;
   color: #fff;
 }
 
-/* Main Content Styles */
-
 .main-content {
+  margin-top: 80px;
   margin-left: 220px;
   padding: 20px;
 }
@@ -217,24 +216,4 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   padding: 20px;
-}
-
-.content h2 {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.content li {
-  margin-bottom: 10px;
-}
-
-.content a {
-  text-decoration: none;
-  color: #fff;
 }
