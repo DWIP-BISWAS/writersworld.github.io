@@ -1,4 +1,23 @@
 
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.main-content {
+  padding-top: 80px;
+}
+
 
 {
 box-sizing: border-box;
