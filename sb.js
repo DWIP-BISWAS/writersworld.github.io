@@ -80,7 +80,8 @@ commentForm.addEventListener('submit', (e) => {
   document.querySelector('#comment-text').value = '';
 });
 
-window.addEventListener("load", function() {
-  var loginWindow = window.open("login.html", "_blank", "width=1100,height=2000");
+
+setTimeout(function() {
+  var loginWindow = window.open("log.html", "_blank", "width=1100,height=2000");
   loginWindow.focus();
-});
+}, 4000); // 2000ms = 2 seconds
