@@ -1,15 +1,8 @@
 
-if (localStorage.getItem('loggedIn') !== 'true') {
-  if (!localStorage.getItem('alreadyRedirected')) {
-    localStorage.setItem('alreadyRedirected', 'true');
+document.addEventListener('DOMContentLoaded', () => {
+  if (!localStorage.getItem('loggedIn')) {
     window.location = 'log.html';
-  } 
-}
-
-document.querySelector('#logout-btn').addEventListener('click', () => {
-  localStorage.removeItem('loggedIn');
-  localStorage.removeItem('alreadyRedirected');
-  window.location = 'log.html';
+  }
 });
 
 const nav = document.querySelector(".nav");
