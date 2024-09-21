@@ -24,24 +24,28 @@
           </div>
           <input type="submit" value="Login" class="btn solid" />
         </form>
-      </div>
-    </div>
-    <div class="panels-container">
-      <div class="panel left-panel">
-        <div class="content">
-          <h3>Learn more about timeout</h3>
-          <p>Click Learn more to learn more about our timeout policy.</p>
-          <button class="btn transparent" id="sign-up-btn">Learn More</button>
+        <div class="learn-more-section">
+          <h2 class="title">Learn More</h2>
+          <button class="btn" id="learn-more-btn">Learn More</button>
           <div class="learn-more-content" style="display: none;">
             <h2>Due to limited server capacity, we currently cannot store user login credentials for long hours. We apologize for any inconvenience this may cause.</h2>
             <h2>Please note that our session time limit is one hour. We appreciate your understanding in this matter.</h2>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>New to Writer's World?</h3>
+          <p>Discover a vast realm of e-books, podcasts, audiobooks, and more!</p>
+          <button class="btn transparent" id="sign-up-btn" onclick="">Sign up</button>
+        </div>
         <img src="img/log.svg" class="image" alt="" />
       </div>
       <div class="panel right-panel">
         <div class="content">
-          <h3>Login Now!</h3>
+          <h3>Already a member?</h3>
           <p>Login now to access your favorite content!</p>
           <button class="btn transparent" id="sign-in-btn" onclick="">Sign in</button>
         </div>
@@ -51,7 +55,7 @@
   </div>
   <script src="app.js"></script>
   <script>
-    document.getElementById('sign-up-btn').addEventListener('click', () => {
+    document.getElementById('learn-more-btn').addEventListener('click', () => {
       document.querySelector('.learn-more-content').style.display = 'block';
     });
   </script>
