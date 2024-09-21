@@ -87,3 +87,18 @@ $(window).load(function(){
     $('#loginModal').modal('show');
   }, 3000); 
 });
+
+
+
+localStorage.setItem('loggedIn', 'true');
+window.location = 'index.html';
+
+if (!localStorage.getItem('loggedIn') || localStorage.getItem('loggedIn') !== 'true') {
+  window.location = 'log.html';
+}
+
+
+document.querySelector('#logout-btn').addEventListener('click', () => {
+  localStorage.removeItem('loggedIn');
+  window.location = 'log.html';
+});
