@@ -24,37 +24,30 @@
           </div>
           <input type="submit" value="Login" class="btn solid" />
         </form>
-        <form action="#" class="sign-up-form" onsubmit="window.location='index.html'; return false;">
-          <h2 class="title">Sign up</h2>
-          <div class="input-field">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" />
+        <div class="learn-more-section">
+          <h2 class="title">Learn More</h2>
+          <button class="btn" id="learn-more-btn">Learn More</button>
+          <div class="learn-more-content" style="display: none;">
+            <p>Important Notice:</p>
+            <p>Due to limited server capacity, we currently cannot store user login credentials for long hours. We apologize for any inconvenience this may cause.</p>
+            <p>Please note that our session time limit is 1 hour. We appreciate your understanding in this matter.</p>
           </div>
-          <div class="input-field">
-            <i class="fas fa-envelope"></i>
-            <input type="email" placeholder="Email" />
-          </div>
-          <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" />
-          </div>
-          <input type="submit" class="btn" value="Sign up" />
-        </form>
+        </div>
       </div>
     </div>
     <div class="panels-container">
       <div class="panel left-panel">
         <div class="content">
-          <h3>New here?</h3>
-          <p>Signup now and join the never-ending realm of e-book, podcast, audio-book, and what not!</p>
-          <button class="btn transparent" id="sign-up-btn" onclick=" ">Sign up</button>
+          <h3>New to Writer's World?</h3>
+          <p>Discover a vast realm of e-books, podcasts, audiobooks, and more!</p>
+          <button class="btn transparent" id="sign-up-btn" onclick="">Sign up</button>
         </div>
         <img src="img/log.svg" class="image" alt="" />
       </div>
       <div class="panel right-panel">
         <div class="content">
-          <h3>One of us?</h3>
-          <p>Login now and join the never-ending realm of e-book, podcast, audio-book, and what not!</p>
+          <h3>Already a member?</h3>
+          <p>Login now to access your favorite content!</p>
           <button class="btn transparent" id="sign-in-btn" onclick="">Sign in</button>
         </div>
         <img src="img/register.svg" class="image" alt="" />
@@ -62,5 +55,10 @@
     </div>
   </div>
   <script src="app.js"></script>
+  <script>
+    document.getElementById('learn-more-btn').addEventListener('click', () => {
+      document.querySelector('.learn-more-content').style.display = 'block';
+    });
+  </script>
 </body>
 </html>
