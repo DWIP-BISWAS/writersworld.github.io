@@ -228,6 +228,8 @@ a:hover {
 
 
 /* Audiobook Styles */
+
+/* Audiobook Styles */
 .audiobook-list {
   list-style: none;
   padding: 0;
@@ -241,6 +243,7 @@ a:hover {
   backdrop-filter: blur(10px);
   padding: 10px;
   margin-bottom: 20px;
+  color: #ccc; /* Applied hover color to normal view */
 }
 
 .audiobook-list li:hover {
@@ -249,10 +252,11 @@ a:hover {
 }
 
 .audiobook-list a {
+  transition: color 0.3s ease;
   text-decoration: none;
-  color: #ccc;
+  color: #ccc; /* Applied hover color to normal view */
 }
 
-.audiobook-list a {
-  color: #fff !important;
+.audiobook-list a:hover {
+  color: #fff; /* Reversed hover color */
 }
