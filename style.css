@@ -119,31 +119,47 @@ a:hover {
   color: #ccc; /* Hover text color: Light Gray */
 }
 
-.notable-ex-member {
+.member {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   padding: 20px;
-  margin: 20px;
+  width: 200px;
   text-align: center;
+  color: #fff;
+  margin: 20px;
+}
+
+.member:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-picture {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.member-details {
+  margin-top: 10px;
+}
+
+.member-details h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
   color: #fff;
 }
 
-.notable-ex-member .member {
-  display: inline-block;
-  margin: 20px;
-  vertical-align: top;
-}
-
-.notable-ex-member img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.notable-ex-member p {
+.member-details p {
   font-size: 14px;
   margin-bottom: 5px;
   color: #fff;
