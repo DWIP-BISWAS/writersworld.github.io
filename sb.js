@@ -1,8 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   if (!localStorage.getItem('loggedIn')) {
-    window.location = 'log.html';
-  }
+    setTimeout(()=>{
+  window.location.href = 'log.html';},3600000);
 });
 
 const nav = document.querySelector(".nav");
