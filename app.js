@@ -14,16 +14,20 @@ sign_in_btn.addEventListener("click", () => {
 document.querySelector('#login-form').addEventListener('submit', (e) => {
   e.preventDefault();
   localStorage.setItem('loggedIn', 'true');
-  window.location.href = 'index.html';
+  setTimeout(()=>{
+  window.location.href = 'index.html';},3600000);
 });
 
 document.querySelector('#signup-form').addEventListener('submit', (e) => {
   e.preventDefault();
   localStorage.setItem('loggedIn', 'true');
-  window.location.href = 'index.html';
+  setTimeout(()=>{
+  window.location.href = 'index.html';},3600000);
 });
 
 document.querySelector('#logout-btn').addEventListener('click', () => {
   localStorage.removeItem('loggedIn');
-  window.location = 'log.html';
+  setTimeout(()=>{
+  window.location.href = 'log.html';},3600000);
+});
 });
