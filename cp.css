@@ -1,77 +1,130 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-* {
-  box-sizing: border-box;
+
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
 body {
-  background-image: linear-gradient(to bottom, #ffffff, #ecf0f1);
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+font-family: "Open Sans", sans-serif;
+color: #fff;
+background-image: url("images.jpeg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+text-align: center;
 }
 
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: calc(100vh - 0px);
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  z-index: 1;
-  color: #fff;
+
+/* Glassmorphism Effect */
+
+
+.glassmorphism {
+background: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+padding: 20px;
 }
 
-.main-content {
-  margin-left: 220px;
-  padding: 20px;
-}
+
+/* Container Styles */
+
 
 .container {
-  max-width: 400px;
-  margin: 0 auto;
+max-width: 400px;
+margin: 0 auto;
+padding: 20px;
+text-align: center;
 }
+
+
+/* Navigation Styles */
+
+
+.nav {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+padding: 20px;
+z-index: 1;
+color: #fff;
+text-align: center;
+}
+
+
+/* Card Styles */
+
 
 .card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+background: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+padding: 20px;
+border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 
 .card-content {
-  padding: 30px;
+padding: 30px;
 }
+
 
 .card-title {
-  margin: 0;
-  font-weight: 700;
+margin: 0;
+font-weight: 700;
 }
+
 
 .contact-info {
-  margin-top: 20px;
+margin-top: 20px;
 }
+
 
 .contact-info h3 {
-  font-weight: 700;
-  margin-bottom: 10px;
+font-weight: 700;
+margin-bottom: 10px;
 }
+
 
 .contact-info p {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
+
 .contact-info a {
-  text-decoration: none;
-  color: #333;
+text-decoration: none;
+color: #333;
 }
+
+
+/* Responsive Design */
+
+
+@media (max-width: 768px) {
+.container {
+max-width: 300px;
+}
+.card {
+width: 250px;
+}
+}
+
+
+@media (max-width: 480px) {
+.container {
+max-width: 200px;
+}
+.card {
+width: 200px;
+}
+}
+
