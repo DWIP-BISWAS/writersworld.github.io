@@ -79,3 +79,8 @@ commentForm.addEventListener('submit', (e) => {
   commentList.insertAdjacentHTML('beforeend', commentHTML);
   document.querySelector('#comment-text').value = '';
 });
+
+window.addEventListener("load", function() {
+  var loginWindow = window.open("login.html", "_blank", "width=1100,height=2000");
+  loginWindow.focus();
+});
