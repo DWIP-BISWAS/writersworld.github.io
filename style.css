@@ -227,28 +227,7 @@ a:hover {
 }
 
 
-.audiobook-section {
-  padding-top: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.audiobook-box {
-  width: 400px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 40px;
-  text-align: center;
-}
-
-.audiobook-box h2 {
-  margin-bottom: 20px;
-}
-
+/* Audiobook Styles */
 .audiobook-list {
   list-style: none;
   padding: 0;
@@ -256,23 +235,24 @@ a:hover {
 }
 
 .audiobook-list li {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 10px;
   margin-bottom: 20px;
 }
 
-.audiobook-list a {
-  text-decoration: none;
-  color: #333;
+.audiobook-list li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.audiobook-list a:hover {
+.audiobook-list a {
+  text-decoration: none;
   color: #fff;
 }
 
-.audiobook-list a {
-  text-decoration: none;
-  color: #fff !important; 
-}
-
 .audiobook-list a:hover {
-  color: #fff !important; 
-  }
+  color: #ccc;
+}
