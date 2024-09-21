@@ -30,4 +30,3 @@ document.querySelector('#logout-btn').addEventListener('click', () => {
   setTimeout(()=>{
   window.location.href = 'log.html';},3600000);
 });
-});
