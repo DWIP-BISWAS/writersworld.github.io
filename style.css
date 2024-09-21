@@ -260,3 +260,42 @@ a:hover {
 .audiobook-list a:hover {
   color: #fff; /* Reversed hover color */
 }
+
+
+.podcast-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.podcast-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.podcast-box li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.podcast-box li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.podcast-box a {
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.podcast-box a:hover {
+  color: #fff;
+}
