@@ -253,6 +253,6 @@ a:hover {
   color: #ccc;
 }
 
-.audiobook-list a:hover {
-  color: #fff;
+.audiobook-list a {
+  color: #fff !important;
 }
