@@ -1,14 +1,17 @@
+
 if (localStorage.getItem('loggedIn') === null || localStorage.getItem('loggedIn') !== 'true') {
-  window.location = 'log.html';
-}
-else
-{
+  if (!localStorage.getItem('redirected')) {
+    localStorage.setItem('redirected', 'true');
+    window.location = 'log.html';
+  }
 }
 
 document.querySelector('#logout-btn').addEventListener('click', () => {
   localStorage.removeItem('loggedIn');
+  localStorage.removeItem('redirected');
   window.location = 'log.html';
 });
+
 
 const nav = document.querySelector(".nav");
 const fixNav = () => {
