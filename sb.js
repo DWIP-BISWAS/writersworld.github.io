@@ -1,6 +1,9 @@
 if (localStorage.getItem('loggedIn') === null || localStorage.getItem('loggedIn') !== 'true') {
   window.location = 'log.html';
 }
+else
+{
+}
 
 document.querySelector('#logout-btn').addEventListener('click', () => {
   localStorage.removeItem('loggedIn');
