@@ -1,9 +1,4 @@
 
-document.addEventListener('DOMContentLoaded', () => {
-  if (!localStorage.getItem('loggedIn')) {
-    setTimeout(()=>{
-  window.location.href = 'log.html';},3600000);
-});
 
 const nav = document.querySelector(".nav");
 const fixNav = () => {
