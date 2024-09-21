@@ -215,3 +215,14 @@ a:hover {
   text-decoration: none;
   color: #333;
 }
+
+
+.contact-info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-info a:hover {
+  color: #ccc;
+}
+
