@@ -166,26 +166,6 @@ a:hover {
 }
 
 
-.main-content {
-  margin-left: 220px;
-  padding: 20px;
-}
-
-#ebook-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#ebook-list li {
-  margin-bottom: 10px;
-  padding-left: 0;
-}
-
-#ebook-list li a {
-  text-decoration: none;
-  color: #333;
-}
 
 #search-input {
   width: 100%;
