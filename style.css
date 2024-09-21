@@ -267,62 +267,34 @@ line-height: 25px;
 /* Add the updated CSS code here */
 
 
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #222;
-  background-color: #f7f7f7;
-  backdrop-filter: blur(10px);
+
+/* Glassmorphism effect */
+.glassmorphism {
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   padding: 20px;
 }
 
 .nav {
-  position: fixed;
   background: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
-}
-
-.nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  transition: all 0.3s ease-in-out;
 }
 
 .hero {
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 100vh;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  margin-bottom: 20px;
-  z-index: -2;
-  backdrop-filter: blur(10px);
   background: rgba(0, 0, 0, 0.5);
-}
-
-.content {
-  background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  backdrop-filter: blur(10px);
 }
