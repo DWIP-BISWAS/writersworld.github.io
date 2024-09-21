@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <script src="(link unavailable)" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="logs.css" />
   <title>Login Page</title>
 </head>
@@ -24,7 +24,6 @@
           </div>
           <input type="submit" value="Login" class="btn solid" />
         </form>
-        </div>
       </div>
     </div>
     <div class="panels-container">
@@ -32,11 +31,11 @@
         <div class="content">
           <h3>Learn more about timeout</h3>
           <p>Click Learn more to learn more about our timeout policy.</p>
-          <button class="btn transparent" id="sign-up-btn" onclick="">Learn More</button>
-          
+          <button class="btn transparent" id="sign-up-btn">Learn More</button>
+          <div class="learn-more-content" style="display: none;">
             <h2>Due to limited server capacity, we currently cannot store user login credentials for long hours. We apologize for any inconvenience this may cause.</h2>
             <h2>Please note that our session time limit is one hour. We appreciate your understanding in this matter.</h2>
-  
+          </div>
         </div>
         <img src="img/log.svg" class="image" alt="" />
       </div>
@@ -52,7 +51,7 @@
   </div>
   <script src="app.js"></script>
   <script>
-    document.getElementById('learn-more-btn').addEventListener('click', () => {
+    document.getElementById('sign-up-btn').addEventListener('click', () => {
       document.querySelector('.learn-more-content').style.display = 'block';
     });
   </script>
