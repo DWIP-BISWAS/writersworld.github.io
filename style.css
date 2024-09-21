@@ -128,7 +128,7 @@ a:hover {
   width: 200px;
   text-align: center;
   color: #fff;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .member:hover {
