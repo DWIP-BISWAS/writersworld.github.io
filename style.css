@@ -492,28 +492,3 @@ a:hover {
   box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
 }
 
-/* Trail effect */
-.confetti::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  background: linear-gradient(145deg, #ff69b4, #fff, #ff69b4);
-  border-radius: 50%;
-  opacity: 0.5;
-  animation: trail 3s linear infinite;
-}
-
-/* Animation */
-@keyframes confetti {
-  0% { transform: translateY(0) rotate(45deg); }
-  100% { transform: translateY(-100vh) rotate(45deg); }
-}
-
-@keyframes trail {
-  0% { opacity: 0.5; transform: scale(1); }
-  100% { opacity: 0; transform: scale(0.5); }
-}
