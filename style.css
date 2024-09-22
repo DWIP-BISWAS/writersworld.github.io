@@ -294,7 +294,7 @@ a:hover {
 .audiobook-list li {
   margin-bottom: 10px;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
 }
 
 .audiobook-list li:hover {
