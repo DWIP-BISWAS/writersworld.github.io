@@ -299,3 +299,36 @@ a:hover {
 .podcast-box a:hover {
   color: #fff;
 }
+.podcast-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+}
+
+.audiobook-list li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.audiobook-list a {
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.audiobook-list a:hover {
+  color: #fff;
+}
