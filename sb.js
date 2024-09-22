@@ -125,3 +125,40 @@ function showSlides(n) {
 setInterval(function() {
   plusSlides(1);
 }, 3000);
+
+// Show popup on page load
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("confetti-container").style.display = "block";
+    setTimeout(function() {
+      document.getElementById("confetti-container").style.display = "none";
+    }, 3000); // 3-second delay
+  }, 2000); // 2-second delay
+});
+
+// Close popup
+document.getElementById("close-popup").addEventListener("click", function() {
+  document.getElementById("popup").style.display = "none";
+  document.getElementById("confetti-container").style.display = "none";
+});
+
+// Optional: Show popup on scroll
+window.onscroll = function() {
+  if (window.scrollY > 500) { // Adjust scroll position
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("confetti-container").style.display = "block";
+  }
+}
+
+// Optional: Show popup on click
+document.getElementById("show-popup").addEventListener("click", function() {
+  document.getElementById("popup").style.display = "block";
+  document.getElementById("confetti-container").style.display = "block";
+});
+
+// Optional: Hide popup after X seconds
+setTimeout(function() {
+  document.getElementById("popup").style.display = "none";
+  document.getElementById("confetti-container").style.display = "none";
+}, 10000); // 10-second delay
