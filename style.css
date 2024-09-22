@@ -384,3 +384,131 @@ a:hover {
 .active, .dot:hover {
   background-color: #717171;
 }
+
+/* Popup styles */
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+  width: 400px;
+  max-width: 90%;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#close-popup {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Confetti styles */
+
+#confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff69b4;
+  border-radius: 50%;
+  animation: confetti 3s linear infinite;
+}
+
+#confetti-1 {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+#confetti-2 {
+  top: 30%;
+  left: 50%;
+  animation-delay: 0.5s;
+}
+
+#confetti-3 {
+  top: 50%;
+  left: 80%;
+  animation-delay: 1s;
+}
+
+#confetti-4 {
+  top: 70%;
+  left: 30%;
+  animation-delay: 1.5s;
+}
+
+#confetti-5 {
+  top: 90%;
+  left: 60%;
+  animation-delay: 2s;
+}
+
+#confetti-6 {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0.2s;
+}
+
+#confetti-7 {
+  top: 40%;
+  left: 70%;
+  animation-delay: 1.2s;
+}
+
+#confetti-8 {
+  top: 60%;
+  left: 40%;
+  animation-delay: 1.8s;
+}
+
+#confetti-9 {
+  top: 80%;
+  left: 20%;
+  animation-delay: 2.5s;
+}
+
+#confetti-10 {
+  top: 10%;
+  left: 80%;
+  animation-delay: 0.8s;
+}
+
+@keyframes confetti {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-100vh) scale(0);
+  }
+}
