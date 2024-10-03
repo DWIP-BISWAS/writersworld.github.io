@@ -59,5 +59,21 @@
       document.querySelector('.learn-more-content').style.display = 'block';
     });
   </script>
+  <form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  const scriptURL = '<SCRIPT URL>'
+  const form = document.forms['input-field']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+  </script>
 </body>
 </html>
