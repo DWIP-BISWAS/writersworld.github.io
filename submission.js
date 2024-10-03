@@ -4,7 +4,7 @@ exports.handler = async (event) => {
 
   const nodemailer = require('nodemailer');
   const transporter = nodemailer.createTransport({
-    host: '(link unavailable)',
+    host: 'smtp.gmail.com',
     port: 587,
     secure: false,
     auth: {
