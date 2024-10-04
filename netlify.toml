@@ -1,8 +1,0 @@
-
-[build]
-  functions = "/"
-
-[environment]
-  EMAIL_USERNAME = "${EMAIL_USERNAME}"
-  EMAIL_PASSWORD = "${EMAIL_PASSWORD}"
-  EMAIL_RECIPIENT = "${EMAIL_RECIPIENT}"
