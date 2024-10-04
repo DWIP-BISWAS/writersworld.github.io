@@ -162,3 +162,23 @@ setTimeout(function() {
   document.getElementById("popup").style.display = "none";
   document.getElementById("confetti-container").style.display = "none";
 }, 10000); // 10-second delay
+
+
+// Show the button when scrolling down
+window.onscroll = function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+};
+
+// Scroll to top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll effect
+    });
+             }
+                            
