@@ -69,116 +69,41 @@ document.getElementById("search-input").addEventListener("input", (e) => {
   renderEbookList(searchedEbooks);
 });
 
-// New script for comment system
-const commentForm = document.querySelector('.comment-form');
-const commentList = document.querySelector('.comment-list');
-commentForm.addEventListener('submit', (e) => {
-  alert('Comment Added!');
-  e.preventDefault();
-  const commentText = document.querySelector('#comment-text').value;
-  const commentHTML = `<p>${commentText}</p>`;
-  commentList.insertAdjacentHTML('beforeend', commentHTML);
-  document.querySelector('#comment-text').value = '';
-});
 
-
-
-$(window).load(function(){
-  setTimeout(function(){
-    $('#loginModal').modal('show');
-  }, 3000); 
-});
-
-
-// Auto-sliding photo frame
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-// Auto-slide
-setInterval(function() {
-  plusSlides(1);
-}, 3000);
-
-// Show popup on page load
-document.addEventListener("DOMContentLoaded", function() {
+  // Show modal after 2 seconds
+window.onload = function() {
   setTimeout(function() {
-    document.getElementById("popup").style.display = "block";
-    document.getElementById("confetti-container").style.display = "block";
-    setTimeout(function() {
-      document.getElementById("confetti-container").style.display = "none";
-    }, 3000); // 3-second delay
-  }, 2000); // 2-second delay
-});
-
-// Close popup
-document.getElementById("close-popup").addEventListener("click", function() {
-  document.getElementById("popup").style.display = "none";
-  document.getElementById("confetti-container").style.display = "none";
-});
-
-// Optional: Show popup on scroll
-window.onscroll = function() {
-  if (window.scrollY > 500) { // Adjust scroll position
-    document.getElementById("popup").style.display = "block";
-    document.getElementById("confetti-container").style.display = "block";
-  }
-}
-
-// Optional: Show popup on click
-document.getElementById("show-popup").addEventListener("click", function() {
-  document.getElementById("popup").style.display = "block";
-  document.getElementById("confetti-container").style.display = "block";
-});
-
-// Optional: Hide popup after X seconds
-setTimeout(function() {
-  document.getElementById("popup").style.display = "none";
-  document.getElementById("confetti-container").style.display = "none";
-}, 10000); // 10-second delay
-
-
-// Show the button when scrolling down
-window.onscroll = function() {
-    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollToTopBtn.style.display = 'block';
-    } else {
-        scrollToTopBtn.style.display = 'none';
-    }
+    document.getElementById("bookPromoModal").style.display = "block";
+  }, 2000);
 };
 
-// Scroll to top function
+// Get the modal
+var modal = document.getElementById("bookPromoModal");
+
+// Get the <span> element that closes the modal
+var closeIcon = document.getElementsByClassName("promo-close")[0];
+
+// Get the "Close" button
+var closeButton = document.getElementById("promoCloseBtn");
+
+// When the user clicks on <span> (x), close the modal
+closeIcon.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks the close button, close the modal
+closeButton.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Scroll to top functionality
 function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Smooth scroll effect
-    });
-             }
-                            
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
