@@ -103,7 +103,29 @@ window.onclick = function(event) {
   }
 }
 
-// Scroll to top functionality
+
+// Scroll to Top Function
 function scrollToTop() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling
+    });
 }
+
+// Show or hide the button based on scroll position
+window.onscroll = function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    // Show button when scrolled down more than 100px
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.style.display = 'flex'; // Show the button
+    } else {
+        scrollToTopBtn.style.display = 'none'; // Hide the button
+    }
+};
+
+// Initialize the button to be hidden initially
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('scrollToTopBtn').style.display = 'none';
+});
+    
