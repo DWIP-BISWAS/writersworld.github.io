@@ -107,32 +107,3 @@ window.onclick = function(event) {
 function scrollToTop() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
-
-/* Scroll to Top Button Styles */
-#scrollToTopBtn {
-    position: fixed; /* Fixed position */
-    bottom: 20px; /* Distance from the bottom */
-    right: 20px; /* Distance from the right */
-    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
-    color: white; /* White text color */
-    border: none; /* No border */
-    border-radius: 50%; /* Circular shape */
-    width: 50px; /* Button width */
-    height: 50px; /* Button height */
-    font-size: 24px; /* Font size */
-    display: flex; /* Flexbox to center the text */
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-    z-index: 1000; /* Stay above other elements */
-}
-
-#scrollToTopBtn:hover {
-    background-color: rgba(0, 123, 255, 1); /* Change background on hover */
-    transform: scale(1.1); /* Slightly increase size on hover */
-}
-
-#scrollToTopBtn:focus {
-    outline: none; /* Remove focus outline */
-  }
