@@ -296,111 +296,87 @@ a:hover {
 }
 
 
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+/* Popup Modal Styles - Always on Top */
+.promo-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Higher than everything */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.75); /* Black background with transparency */
+  pointer-events: auto; /* Ensure it responds to user interactions */
 }
 
-.mySlides {
-  display: none;
-}
-
-.mySlides img {
-  width: 100%;
-  height: auto;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-.text {
-  color: #fff;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.promo-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* Centered vertically */
+  padding: 30px;
+  border: 2px solid #444;
+  width: 80%; /* Could be adjusted */
+  max-width: 600px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  position: relative; /* For the close button */
 }
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: #fff;
-  font-weight: bold;
+.promo-content h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.promo-content p {
   font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  color: #555;
 }
 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.slideshow-controls {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 10px;
-}
-
-.dot {
-  cursor: pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+.promo-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.promo-button:hover {
+  background-color: #45a049;
 }
 
-
-    #scrollToTopBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none; /* Hidden by default */
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1000; /* Ensure it appears on top */
+.promo-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
 }
 
-#scrollToTopBtn:hover {
-    background-color: #0056b3;
-                            }
-  
+.promo-close:hover {
+  color: #000;
+}
+
+/* Close button */
+.promo-close-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.promo-close-btn:hover {
+  background-color: #ff1a1a;
+  }
+    
