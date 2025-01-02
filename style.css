@@ -1,5 +1,4 @@
-
-/* Global Styles */
+/* General Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,13 +7,13 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #fff; /* Text color: White */
+  color: #fff;
   background-image: url("images.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  text-align: center; /* Center text */
+  text-align: center;
 }
 
 /* Glassmorphism Effect */
@@ -24,17 +23,51 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   padding: 20px;
+  margin: 20px auto;
+  text-align: center;
 }
 
-/* Container Styles */
-.container {
-  max-width: 1200px;
+/* Text and Alignment Improvements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  color: #fff;
+  line-height: 1.6;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Remove Bullet Points */
+ul, li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
   margin: 0 auto;
-  padding: 20px;
-  text-align: center; /* Center text */
+  text-align: center;
 }
 
-/* Navigation Styles */
+li {
+  margin: 10px 0;
+}
+
+/* Navigation Bar */
 .nav {
   position: fixed;
   top: 0;
@@ -44,44 +77,30 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
-  padding: 20px;
+  padding: 10px 20px;
   z-index: 1;
-  color: #fff; /* Text color: White */
-  text-align: center; /* Center text */
-}
-
-.nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around; /* Center nav links */
-}
-
-.nav li {
-  margin-right: 20px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #fff; /* Text color: White */
-}
-
-/* Hero Styles */
-.hero {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff; /* Text color: White */
-  text-align: center; /* Center text */
 }
 
-/* Main Styles */
+.nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Main Sections */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
-  text-align: center; /* Center text */
+  padding: 50px 20px;
 }
 
 section {
@@ -91,93 +110,53 @@ section {
   backdrop-filter: blur(10px);
   padding: 20px;
   margin: 20px;
-  color: #fff; /* Text color: White */
-  text-align: center; /* Center text */
+  color: #fff;
+  max-width: 800px;
+  text-align: left;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  color: #fff; /* Text color: White */
-}
-
-p {
-  color: #fff; /* Text color: White */
-}
-
-a {
-  text-decoration: none;
-  color: #fff; /* Text color: White */
-}
-
-a:hover {
-  color: #ccc; /* Hover text color: Light Gray */
-}
-
-.member {
+/* Boxes */
+.box {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   padding: 20px;
-  width: 200px;
-  text-align: center;
-  color: #fff;
   margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
 }
 
-.member:hover {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.profile-picture {
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.profile-picture img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.member-details {
-  margin-top: 10px;
-}
-
-.member-details h3 {
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 16px;
-  color: #fff;
-}
-
-.member-details p {
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #fff;
-}
-
-#search-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  border: none;
-  font-size: 16px;
-}
-
-/* Contact Styles */
-/* Contact Styles */
-.main-content {
-  padding-top: 80px;
+.box ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 0;
+  margin: 20px 0;
+  gap: 10px;
 }
 
+.box li {
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.box li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.box a {
+  color: #ccc;
+}
+
+.box a:hover {
+  color: #fff;
+}
+
+/* Contact Box */
 .contact-box {
   width: 400px;
   margin: 0 auto;
@@ -185,112 +164,36 @@ a:hover {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .contact-box h2 {
   margin-bottom: 20px;
-}
-
-.contact-info {
-  margin-top: 20px;
+  color: #fff;
 }
 
 .contact-info h3 {
   font-weight: bold;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .contact-info p {
   margin-bottom: 20px;
-}
-
-.contact-info a {
-  text-decoration: none;
   color: #fff;
 }
 
-.contact-info a:hover {
-  color: #ccc;
-}
-
-/* Audiobook Styles */
-.audiobook-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
+/* Audiobooks */
 .audiobook-list li {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
   padding: 10px;
-  margin-bottom: 20px;
-  color: #fff;
+  margin-bottom: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
 }
 
 .audiobook-list li:hover {
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.audiobook-list a {
-  transition: color 0.3s ease;
-  text-decoration: none;
-  color: #fff;
-}
-
-.audiobook-list a:hover {
-  color: #ccc;
-}
-
-.podcast-box {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  margin: 40px auto;
-  max-width: 800px;
-  text-align: center;
-}
-
-.box {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.box ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.box li {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-.box li:hover {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.box a {
-  transition: color 0.3s ease;
-  text-decoration: none;
-  color: #ccc;
-}
-
-.box a:hover {
-  color: #fff;
-}
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  
