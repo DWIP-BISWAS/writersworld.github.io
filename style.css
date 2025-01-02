@@ -1,4 +1,4 @@
-/* General Reset */
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,187 +13,139 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  text-align: center;
 }
 
-/* Glassmorphism Effect */
-.glassmorphism {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  margin: 20px auto;
-  text-align: center;
-}
-
-/* Text and Alignment Improvements */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-p {
-  color: #fff;
-  line-height: 1.6;
-  margin: 20px 0;
-  text-align: justify;
-}
-
-a {
-  text-decoration: none;
-  color: #ccc;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #fff;
-}
-
-/* Remove Bullet Points */
-ul, li {
-  list-style: none;
-}
-
-ul {
-  padding: 0;
-  margin: 0 auto;
-  text-align: center;
-}
-
-li {
-  margin: 10px 0;
-}
-
-/* Navigation Bar */
+/* Navigation Styles */
 .nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 10;
 }
 
 .nav ul {
+  list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 15px;
 }
 
 .nav a {
+  text-decoration: none;
   color: #fff;
-  font-size: 16px;
-  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* Main Sections */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 20px;
-}
-
-section {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  margin: 20px;
-  color: #fff;
-  max-width: 800px;
-  text-align: left;
-}
-
-/* Boxes */
-.box {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  text-align: center;
-}
-
-.box ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  margin: 20px 0;
-  gap: 10px;
-}
-
-.box li {
-  padding: 10px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.box li:hover {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-}
-
-.box a {
+.nav a:hover {
   color: #ccc;
 }
 
-.box a:hover {
-  color: #fff;
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Contact Box */
-.contact-box {
-  width: 400px;
-  margin: 0 auto;
-  padding: 40px;
-  text-align: center;
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+}
+
+/* Section Styles */
+section {
+  margin: 20px auto;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  max-width: 900px;
 }
 
-.contact-box h2 {
+section h2 {
   margin-bottom: 20px;
-  color: #fff;
-}
-
-.contact-info h3 {
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.contact-info p {
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-/* Audiobooks */
-.audiobook-list li {
-  padding: 10px;
-  margin-bottom: 15px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
+}
+
+section p {
+  text-align: justify;
+}
+
+/* E-Book List */
+#audiobook-list {
+  list-style: none;
+  padding: 0;
+}
+
+.audiobook-list li {
+  margin: 10px 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .audiobook-list li:hover {
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 10px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin: 0 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
   }
-  
+
+  .nav li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  .audiobook-list li {
+    padding: 10px;
+  }
+}
