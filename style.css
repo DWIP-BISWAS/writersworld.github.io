@@ -1,5 +1,6 @@
 
 /* Global Styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +19,7 @@ body {
 }
 
 /* Glassmorphism Effect */
+
 .glassmorphism {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
@@ -27,6 +29,7 @@ body {
 }
 
 /* Container Styles */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -35,6 +38,7 @@ body {
 }
 
 /* Navigation Styles */
+
 .nav {
   position: fixed;
   top: 0;
@@ -66,6 +70,7 @@ body {
 }
 
 /* Hero Styles */
+
 .hero {
   height: 100vh;
   display: flex;
@@ -76,6 +81,7 @@ body {
 }
 
 /* Main Styles */
+
 main {
   display: flex;
   flex-direction: column;
@@ -159,6 +165,8 @@ a:hover {
   color: #fff;
 }
 
+
+
 #search-input {
   width: 100%;
   padding: 10px;
@@ -168,7 +176,6 @@ a:hover {
   font-size: 16px;
 }
 
-/* Contact Styles */
 /* Contact Styles */
 .main-content {
   padding-top: 80px;
@@ -206,6 +213,12 @@ a:hover {
 
 .contact-info a {
   text-decoration: none;
+  color: #333;
+}
+
+
+.contact-info a {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -213,7 +226,29 @@ a:hover {
   color: #ccc;
 }
 
-/* Audiobook Styles */
+
+.audiobook-section {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.audiobook-box {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  text-align: center;
+}
+
+.audiobook-box h2 {
+  margin-bottom: 20px;
+}
+
 .audiobook-list {
   list-style: none;
   padding: 0;
@@ -221,76 +256,14 @@ a:hover {
 }
 
 .audiobook-list li {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 10px;
   margin-bottom: 20px;
-  color: #fff;
-}
-
-.audiobook-list li:hover {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .audiobook-list a {
-  transition: color 0.3s ease;
   text-decoration: none;
-  color: #fff;
+  color: #333;
 }
 
 .audiobook-list a:hover {
   color: #ccc;
 }
-
-.podcast-box {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  margin: 40px auto;
-  max-width: 800px;
-  text-align: center;
-}
-
-.box {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.box ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.box li {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-.box li:hover {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.box a {
-  transition: color 0.3s ease;
-  text-decoration: none;
-  color: #ccc;
-}
-
-.box a:hover {
-  color: #fff;
-                   }
